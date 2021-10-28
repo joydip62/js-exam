@@ -64,29 +64,6 @@ Create the `searchPage` function
 This function will search and display results from all students
 Only the filtered result will be displayed in the view
 */
-const searchBtn = document.querySelector('#searchPage');
-
-function searchPage() {
-    //search then make input field blank
-    const searchID = document.querySelector("#search");
-    const searchText = searchID.value;
-    searchID.value = '';
-  
-    //if no results found
-    if (searchText === '') {
-        const h1 = document.createElement("h1");
-        h1.classList.add("student-item");
-        h1.innerText = 'Nothing Found';
-        nothing.appendChild(h1);
-    } else {
-      nothing.textContent='';
-      let result = data.filter(datas => datas.name.first == searchText);
-      console.log(result);
-     
-  }
-  };
-
-
 
 // // Call functions
 showPage();
